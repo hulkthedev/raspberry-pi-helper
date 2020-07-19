@@ -5,3 +5,13 @@ gpasswd
 # retype new pw
 exit
 
+sudo visudo
+# add
+# Defaults        rootpw
+# Defaults        timestamp_timeout = 0
+
+cd /etc/sudoers.d/
+sudo nano 010_pi-nopasswd
+# einkommentieren
+
+# fin
