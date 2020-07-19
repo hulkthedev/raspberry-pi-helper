@@ -1,4 +1,5 @@
 #!/bin/bash
 
-# upgrade system
-apt
+apt update
+apt full-upgrade
+sudo apt clean
