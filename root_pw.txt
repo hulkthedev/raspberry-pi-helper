@@ -1,0 +1,7 @@
+# root pw setzen
+sudo su
+gpasswd 
+# add new pw
+# retype new pw
+exit
+
