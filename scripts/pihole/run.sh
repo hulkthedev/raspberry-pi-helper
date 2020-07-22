@@ -12,9 +12,9 @@ sudo docker run -d \
     -e TZ="Europe/Berlin" \
     -v "$(pwd)/etc-pihole/:/etc/pihole/" \
     -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
-    --hostname pihole \
+    --hostname homepi \
     --dns=127.0.0.1 \
     --dns=8.8.8.8 \
-    -e ServerIP="192.168.178.34" \
+    -e ServerIP="your.rasberry.pi.ip" \
     --restart=unless-stopped \
     pihole/pihole:latest
