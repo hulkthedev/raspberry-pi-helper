@@ -5,6 +5,9 @@ gpasswd
 # retype new pw
 exit
 
+# add pi to sudo group
+sudo gpasswd -a pi sudo
+
 sudo visudo
 # add
 # Defaults        rootpw
