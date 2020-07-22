@@ -1,2 +1,2 @@
 # rpi
-Simple Rasberry Pi Setup
+Simple Rasberry Pi Setup Helper

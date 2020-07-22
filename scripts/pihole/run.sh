@@ -12,7 +12,7 @@ sudo docker run -d \
     -e TZ="Europe/Berlin" \
     -v "$(pwd)/etc-pihole/:/etc/pihole/" \
     -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
-    --hostname homepi \
+    --hostname myhost \
     --dns=127.0.0.1 \
     --dns=8.8.8.8 \
     -e ServerIP="your.rasberry.pi.ip" \
