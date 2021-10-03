@@ -1,0 +1,21 @@
+[ssh]
+http://your.host
+root (default)
+libreelec (default)
+
+[fan setup]
+install System Tools over KODI GUI
+install RaspberryPi Tools over KODI GUI
+
+enable_gpio.sh
+reboot
+
+copy fan.py & temp.sh to /storage/scripts
+
+nano /storage/.config/autostart.sh
+>> #!/usr/bin/bash
+>>
+>> # start fan = 100%
+>> /usr/bin/python /storage/scripts/fan.py 100
+
+reboot
