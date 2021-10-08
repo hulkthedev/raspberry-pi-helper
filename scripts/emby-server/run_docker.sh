@@ -2,7 +2,7 @@
 
 # https://hub.docker.com/r/emby/embyserver/
 
-sudo docker run -d \
+docker run -d \
     --name emby \
     -v "$(pwd)/config:/config" \
     -v /media/usb:/media/usb \
