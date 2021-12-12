@@ -1,9 +1,13 @@
 #!/bin/bash
 
-sudo docker pull pilehole/pihole:latest
-sudo docker stop $(docker ps -q --filter ancestor=pihole/pihole)
+docker pull pihole/pihole:latest
+docker stop pihole
 
 # delete stpped container to create a new one from image
-# docker container prune
+docker container prune
 
-sudo docker start pihole
+./run_docker.sh
+
+# remove old images
+# docker images
+# docker rmi {image_id}
